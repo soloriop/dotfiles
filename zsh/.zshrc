@@ -50,7 +50,11 @@ plugins=(rails git)
 # User configuration
 
 export PATH="$PATH:/Users/luismendoza/.rvm/gems/ruby-2.1.2/bin:/Users/luismendoza/.rvm/gems/ruby-2.1.2@global/bin:/Users/luismendoza/.rvm/rubies/ruby-2.1.2/bin:/Users/luismendoza/.rbenv/shims:/usr/local/bin:/Users/luismendoza/Dev/google-cloud-sdk/bin:/usr/local/heroku/bin:/Users/luismendoza/.rbenv/shims:/Users/luismendoza/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/luismendoza/.rvm/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
+
+# Export ENV variables for Kiwi
+export KIWI_SMTP_USER="hola@usekiwi.com"
+export KIWI_SMTP_PASSWORD="BZKNb8nHR3JrTjRvVmpg"
+export GOPATH="/Users/luismendoza/Sandbox/Kiwi/appengine"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -70,9 +74,20 @@ fi
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+## Postgres Commands
+alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+alias pgstatus="pg_ctl -D /usr/local/var/postgres status"
+
+#Solr Commands
+alias solrstart="bundle exec sunspot-solr start"
+alias solrrun="bundle exec sunspot-solr run"
+alias solrstop="bundle exec sunspot-solr stop"
+
 # Personal aliases
 alias ~="cd ~"
 alias reload="source ~/.zshrc"
+alias dotfiles="cd ~/Sandbox/Personal/dotfiles"
 alias dev="cd ~/Sandbox/"
 alias personal="cd ~/Sandbox/Personal"
 alias kiwi="cd ~/Sandbox/Kiwi/"
@@ -80,4 +95,3 @@ alias web="cd ~/Sandbox/Kiwi/web"
 alias admin="cd ~/Sandbox/Kiwi/admin"
 alias api="cd ~/Sandbox/Kiwi/appengine/src/kiwi"
 alias beek="cd ~/Sandbox/Beek/beek_core"
-alias savetorepo="cp ~/.zshrc ~/Sandbox/Personal/dotfiles; cp ~/.bash_profile ~/Sandbox/Personal/dotfiles"
