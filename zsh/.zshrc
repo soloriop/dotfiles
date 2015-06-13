@@ -55,6 +55,7 @@ export PATH="$PATH/Users/luismendoza/.rvm/gems/ruby-2.1.2/bin:/Users/luismendoza
 export KIWI_SMTP_USER="hola@usekiwi.com"
 export KIWI_SMTP_PASSWORD="BZKNb8nHR3JrTjRvVmpg"
 export GOPATH="/Users/luismendoza/dev/kiwi/appengine"
+export GOROOT="/Users/luismendoza/google-cloud-sdk/bin/goapp"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -79,6 +80,11 @@ alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/serv
 alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias pgstatus="pg_ctl -D /usr/local/var/postgres status"
 
+## MySql Commands
+alias msqlstart="mysql.server start"
+alias msqlstop="mysql.server stop"
+alias msqlstatus="mysql.server status"
+
 #Solr Commands
 alias solrstart="bundle exec sunspot-solr start"
 alias solrrun="bundle exec sunspot-solr run"
@@ -96,7 +102,7 @@ alias rd='rails dbconsole'
 alias rp='rails plugin'
 alias ra='rails application'
 alias rd='rails destroy'
- 
+
 ## rake
 alias rt='rake test'
 alias rtu='rake test:units'
@@ -117,6 +123,9 @@ alias dev="cd ~/dev"
 alias personal="cd ~/dev/personal"
 alias kiwi="cd ~/dev/kiwi"
 alias web="cd ~/dev/kiwi/web"
+alias mkt="cd ~/dev/kiwi/mkt-py"
 alias admin="cd ~/dev/kiwi/admin"
 alias api="cd ~/dev/kiwi/appengine/src/kiwi"
+alias kw="cd ~/dev/kiwi/appengine/src/kw"
 alias beek="cd ~/dev/clientes/beek/beek_core"
+
