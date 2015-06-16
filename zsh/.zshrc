@@ -48,14 +48,13 @@ ZSH_THEME="luismendozamx"
 plugins=(rails git node npm ember-cli)
 
 # User configuration
-export PATH="$PATH/Users/luismendoza/.rvm/gems/ruby-2.1.2/bin:/Users/luismendoza/.rvm/gems/ruby-2.1.2@global/bin:/Users/luismendoza/.rvm/rubies/ruby-2.1.2/bin:/Users/luismendoza/google-cloud-sdk/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/luismendoza/.rvm/bin"
-
+export PATH="$PATH:/Users/luismendoza/dev/kiwi/appengine/bin:/Users/luismendoza/.rvm/gems/ruby-2.1.2/bin:/Users/luismendoza/.rvm/gems/ruby-2.1.2@global/bin:/Users/luismendoza/.rvm/rubies/ruby-2.1.2/bin:/Users/luismendoza/google-cloud-sdk/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/luismendoza/.rvm/bin"
 
 # Export ENV variables for Kiwi
 export KIWI_SMTP_USER="hola@usekiwi.com"
 export KIWI_SMTP_PASSWORD="BZKNb8nHR3JrTjRvVmpg"
 export GOPATH="/Users/luismendoza/dev/kiwi/appengine"
-export GOROOT="/Users/luismendoza/google-cloud-sdk/bin/goapp"
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -128,4 +127,3 @@ alias admin="cd ~/dev/kiwi/admin"
 alias api="cd ~/dev/kiwi/appengine/src/kiwi"
 alias kw="cd ~/dev/kiwi/appengine/src/kw"
 alias beek="cd ~/dev/clientes/beek/beek_core"
-
