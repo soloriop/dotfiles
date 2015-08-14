@@ -48,7 +48,7 @@ ZSH_THEME="luismendozamx"
 plugins=(rails git node npm ember-cli)
 
 # User configuration
-export PATH="$PATH:/Users/luismendoza/dev/kiwi/appengine/bin:/Users/luismendoza/.rvm/gems/ruby-2.1.2/bin:/Users/luismendoza/.rvm/gems/ruby-2.1.2@global/bin:/Users/luismendoza/.rvm/rubies/ruby-2.1.2/bin:/Users/luismendoza/google-cloud-sdk/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/luismendoza/.rvm/bin"
+export PATH="$PATH:/Users/luismendoza/google-cloud-sdk/go_appengine:/Users/luismendoza/dev/kiwi/appengine/bin:/Users/luismendoza/.rvm/gems/ruby-2.1.2/bin:/Users/luismendoza/.rvm/gems/ruby-2.1.2@global/bin:/Users/luismendoza/.rvm/rubies/ruby-2.1.2/bin:/Users/luismendoza/google-cloud-sdk/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/luismendoza/.rvm/bin"
 
 # Export ENV variables for Kiwi
 export KIWI_SMTP_USER="hola@usekiwi.com"
@@ -123,7 +123,16 @@ alias personal="cd ~/dev/personal"
 alias kiwi="cd ~/dev/kiwi"
 alias web="cd ~/dev/kiwi/web"
 alias mkt="cd ~/dev/kiwi/mkt-py"
-alias admin="cd ~/dev/kiwi/admin"
+alias admin="cd ~/dev/kiwi/kwadmin"
 alias api="cd ~/dev/kiwi/appengine/src/kiwi"
 alias kw="cd ~/dev/kiwi/appengine/src/kw"
 alias beek="cd ~/dev/clientes/beek/beek_core"
+alias locale="cd ~/dev/clientes/local-e"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/luismendoza/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/luismendoza/google-cloud-sdk/completion.zsh.inc'
