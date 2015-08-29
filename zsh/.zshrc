@@ -45,7 +45,7 @@ ZSH_THEME="luismendozamx"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(rails git node npm ember-cli)
+plugins=(rails git ember-cli)
 
 # User configuration
 export PATH="$PATH:/Users/luismendoza/google-cloud-sdk/go_appengine:/Users/luismendoza/dev/kiwi/appengine/bin:/Users/luismendoza/.rvm/gems/ruby-2.1.2/bin:/Users/luismendoza/.rvm/gems/ruby-2.1.2@global/bin:/Users/luismendoza/.rvm/rubies/ruby-2.1.2/bin:/Users/luismendoza/google-cloud-sdk/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/luismendoza/.rvm/bin"
@@ -128,6 +128,15 @@ alias api="cd ~/dev/kiwi/appengine/src/kiwi"
 alias kw="cd ~/dev/kiwi/appengine/src/kw"
 alias beek="cd ~/dev/clientes/beek/beek_core"
 alias locale="cd ~/dev/clientes/local-e"
+
+# Github functions
+gitlog () {
+  if (( ! $# )); then
+    git log -10 --oneline --decorate --color --graph | cat
+  else
+    git log -$1 --oneline --decorate --color --graph | cat
+  fi
+}
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
