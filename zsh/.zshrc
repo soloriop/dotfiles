@@ -132,7 +132,7 @@ alias locale="cd ~/dev/clientes/local-e"
 # Github functions
 gitlog () {
   if (( ! $# )); then
-    git log -10 --oneline --decorate --color --graph | cat
+    git log -15 --oneline --decorate --color --graph | cat
   else
     git log -$1 --oneline --decorate --color --graph | cat
   fi
