@@ -30,6 +30,15 @@ else
   export EDITOR='mvim'
 fi
 
+# Run Main Editor
+e() {
+  if ((! $#)); then
+    mvim .
+  else
+    mvim $1
+  fi
+}
+
 ## Postgres Commands
 alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
