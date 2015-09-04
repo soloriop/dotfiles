@@ -99,6 +99,12 @@ gitlog () {
 # Ember aliases
 alias ets="ember test --server"
 
+# Work Aliases
+alias rr="rake run"
+alias rdeploy="rake deploy"
+alias rsdeploy="rake stage:deploy"
+alias rkdeploy="rake kiwi:deploy"
+
 # NPM and Bower
 alias npmi="npm install"
 alias bwi="bower install"
