@@ -86,6 +86,7 @@ alias locale="cd ~/dev/clientes/local-e"
 
 # Git aliases
 alias commit="git commit -am"
+
 # Git functions
 gitlog () {
   if (( ! $# )); then
@@ -94,6 +95,14 @@ gitlog () {
     git log -$1 --oneline --decorate --color --graph | cat
   fi
 }
+
+# Ember aliases
+alias ets="ember test --server"
+
+# NPM and Bower
+alias npmi="npm install"
+alias bwi="bower install"
+alias npmb="npm install && bower install"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
