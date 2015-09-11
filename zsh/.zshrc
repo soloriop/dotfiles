@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/luismendoza/.oh-my-zsh
+export ZSH=/Users/luis/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -11,12 +11,12 @@ ZSH_THEME="luismendozamx"
 plugins=(rails git ember-cli)
 
 # User configuration
-export PATH="$PATH:/Users/luismendoza/google-cloud-sdk/go_appengine:/Users/luismendoza/dev/kiwi/appengine/bin:/Users/luismendoza/.rvm/gems/ruby-2.1.2/bin:/Users/luismendoza/.rvm/gems/ruby-2.1.2@global/bin:/Users/luismendoza/.rvm/rubies/ruby-2.1.2/bin:/Users/luismendoza/google-cloud-sdk/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/luismendoza/.rvm/bin"
+export PATH="$PATH:/Users/luis/google-cloud-sdk/go_appengine:/Users/luis/dev/kiwi/appengine/bin:/Users/luis/.rvm/gems/ruby-2.1.2/bin:/Users/luis/.rvm/gems/ruby-2.1.2@global/bin:/Users/luis/.rvm/rubies/ruby-2.1.2/bin:/Users/luis/google-cloud-sdk/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/luis/.rvm/bin"
 
 # Export ENV variables for Kiwi
 export KIWI_SMTP_USER="hola@usekiwi.com"
 export KIWI_SMTP_PASSWORD="BZKNb8nHR3JrTjRvVmpg"
-export GOPATH="/Users/luismendoza/dev/kiwi/appengine"
+export GOPATH="/Users/luis/dev/kiwi/appengine"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -122,7 +122,7 @@ alias npmb="npm install && bower install"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/luismendoza/google-cloud-sdk/path.zsh.inc'
+source '/Users/luis/google-cloud-sdk/path.zsh.inc'
 
 # The next line enables shell command completion for gcloud.
-source '/Users/luismendoza/google-cloud-sdk/completion.zsh.inc'
+source '/Users/luis/google-cloud-sdk/completion.zsh.inc'
