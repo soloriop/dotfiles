@@ -3,7 +3,7 @@ export ZSH=/Users/luis/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
+# Optionally, if you set this to "random", it"ll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="luismendozamx"
 
@@ -25,17 +25,17 @@ export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
+  export EDITOR="vim"
 else
-  export EDITOR='mvim'
+  export EDITOR="mvim"
 fi
 
 # Run Main Editor
 e() {
   if ((! $#)); then
-    mvim .
+    mvim . && echo "mvim ."
   else
-    mvim $1
+    mvim $1 && echo " mvim" $1
   fi
 }
 
@@ -58,27 +58,32 @@ alias solrstop="bundle exec sunspot-solr stop"
 ## Rails
 alias be="bundle exec"
 alias bi="bundle install"
-alias rg='rails g'
-alias rs='rails s'
-alias rc='rails c'
-alias rn='rails new'
-alias rd='rails dbconsole'
-alias rp='rails plugin'
-alias ra='rails application'
-alias rd='rails destroy'
+alias rg="rails g"
+alias rs="rails s"
+alias rc="rails c"
+alias rn="rails new"
+alias rd="rails dbconsole"
+alias rp="rails plugin"
+alias ra="rails application"
+alias rd="rails destroy"
 
 ## rake
-alias rt='rake test'
-alias rtu='rake test:units'
-alias rtf='rake test:functionals'
-alias rti='rake test:integration'
-alias rr='rake routes'
-alias rdbm='rake db:migrate'
-alias rdbr='rake db:rollback'
+alias rt="rake test"
+alias rtu="rake test:units"
+alias rtf="rake test:functionals"
+alias rti="rake test:integration"
+alias rro="rake routes"
+alias rdbm="rake db:migrate"
+alias rdbrb="rake db:rollback"
+alias rdbs="rake db:seed"
+alias rdbr="rake db:reset"
+alias ri="rake install"
+alias ru="rake update"
+alias rr="rake run"
 
 ## Utility Aliases
 alias ~="cd ~"
-alias flushDNS='dscacheutil -flushcache'
+alias flushDNS="dscacheutil -flushcache"
 alias reload="source ~/.zshrc"
 
 # Personal aliases
@@ -95,6 +100,9 @@ alias locale="cd ~/dev/clientes/local-e"
 
 # Git aliases
 alias commit="git commit -am"
+alias c="echo 'git commit -am' && git commit -am"
+alias s="echo 'git stash' && git stash"
+alias a="echo 'git commit -am' && git add ."
 
 # Git functions
 gitlog () {
@@ -109,7 +117,6 @@ gitlog () {
 alias ets="ember test --server"
 
 # Work Aliases
-alias rr="rake run"
 alias rdeploy="rake deploy"
 alias rsdeploy="rake stage:deploy"
 alias rkdeploy="rake kiwi:deploy"
@@ -120,10 +127,10 @@ alias bwi="bower install"
 alias npmb="npm install && bower install"
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/luis/google-cloud-sdk/path.zsh.inc'
+source "/Users/luis/google-cloud-sdk/path.zsh.inc"
 
 # The next line enables shell command completion for gcloud.
-source '/Users/luis/google-cloud-sdk/completion.zsh.inc'
+source "/Users/luis/google-cloud-sdk/completion.zsh.inc"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
