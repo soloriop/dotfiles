@@ -100,7 +100,7 @@ alias api="cd ~/dev/kiwi/appengine/src/kiwi"
 alias locale="cd ~/dev/clientes/local-e"
 
 # Git aliases
-alias commit="git commit -amv"
+alias commit="git commit -am"
 alias c="echo 'git commit -am' && git commit -am"
 alias s="echo 'git stash' && git stash"
 alias a="echo 'git add .' && git add ."
