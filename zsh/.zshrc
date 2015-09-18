@@ -66,6 +66,7 @@ alias rd="rails dbconsole"
 alias rp="rails plugin"
 alias ra="rails application"
 alias rd="rails destroy"
+alias prythis="pry -r ./config/environment"
 
 ## rake
 alias rt="rake test"
@@ -99,10 +100,10 @@ alias api="cd ~/dev/kiwi/appengine/src/kiwi"
 alias locale="cd ~/dev/clientes/local-e"
 
 # Git aliases
-alias commit="git commit -am"
+alias commit="git commit -amv"
 alias c="echo 'git commit -am' && git commit -am"
 alias s="echo 'git stash' && git stash"
-alias a="echo 'git commit -am' && git add ."
+alias a="echo 'git add .' && git add ."
 
 # Git functions
 gitlog () {
