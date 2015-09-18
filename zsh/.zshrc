@@ -67,6 +67,7 @@ alias rp="rails plugin"
 alias ra="rails application"
 alias rd="rails destroy"
 alias prythis="pry -r ./config/environment"
+alias serve="foreman start web"
 
 ## rake
 alias rt="rake test"
