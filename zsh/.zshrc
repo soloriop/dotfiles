@@ -10,8 +10,11 @@ ZSH_THEME="luismendozamx"
 # Plugins
 plugins=(rails git ember-cli)
 
+#Load Rbenv
+eval "$(rbenv init -)"
+
 # User configuration
-export PATH="$PATH:/Users/luis/google-cloud-sdk/go_appengine:/Users/luis/dev/kiwi/appengine/bin:/Users/luis/.rbenv/bin:/Users/luis/google-cloud-sdk/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$PATH:/Users/luis/.rbenv/shims:/Users/luis/google-cloud-sdk/go_appengine:/Users/luis/dev/kiwi/appengine/bin:/Users/luis/google-cloud-sdk/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Export ENV variables for Kiwi
 export KIWI_SMTP_USER="hola@usekiwi.com"
@@ -68,7 +71,7 @@ alias ra="rails application"
 alias rd="rails destroy"
 alias prythis="pry -r ./config/environment"
 
-## rake
+## rake	
 alias rt="rake test"
 alias rtu="rake test:units"
 alias rtf="rake test:functionals"
