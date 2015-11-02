@@ -10,8 +10,11 @@ ZSH_THEME="luismendozamx"
 # Plugins
 plugins=(rails git ember-cli)
 
+#Load Rbenv
+eval "$(rbenv init -)"
+
 # User configuration
-export PATH="$PATH:/Users/luis/google-cloud-sdk/go_appengine:/Users/luis/dev/kiwi/appengine/bin:/Users/luis/.rvm/gems/ruby-2.1.2/bin:/Users/luis/.rvm/gems/ruby-2.1.2@global/bin:/Users/luis/.rvm/rubies/ruby-2.1.2/bin:/Users/luis/google-cloud-sdk/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/luis/.rvm/bin"
+export PATH="$PATH:/Users/luis/.rbenv/shims:/Users/luis/google-cloud-sdk/go_appengine:/Users/luis/dev/kiwi/appengine/bin:/Users/luis/google-cloud-sdk/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Export ENV variables for Kiwi
 export KIWI_SMTP_USER="hola@usekiwi.com"
@@ -69,7 +72,7 @@ alias rd="rails destroy"
 alias prythis="pry -r ./config/environment"
 alias serve="foreman start web"
 
-## rake
+## rake	
 alias rt="rake test"
 alias rtu="rake test:units"
 alias rtf="rake test:functionals"
@@ -133,7 +136,3 @@ source "/Users/luis/google-cloud-sdk/path.zsh.inc"
 
 # The next line enables shell command completion for gcloud.
 source "/Users/luis/google-cloud-sdk/completion.zsh.inc"
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
