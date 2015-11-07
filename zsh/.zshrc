@@ -72,7 +72,7 @@ alias rd="rails destroy"
 alias prythis="pry -r ./config/environment"
 alias serve="foreman start web"
 
-## rake	
+## rake
 alias rt="rake test"
 alias rtu="rake test:units"
 alias rtf="rake test:functionals"
