@@ -100,6 +100,7 @@ alias kiwi="cd ~/dev/kiwi"
 alias web="cd ~/dev/kiwi/web"
 alias mkt="cd ~/dev/kiwi/mkt-py"
 alias admin="cd ~/dev/kiwi/kwadmin"
+alias clients="cd ~/dev/kiwi/clients"
 alias api="cd ~/dev/kiwi/appengine/src/kiwi"
 alias locale="cd ~/dev/clientes/local-e"
 
