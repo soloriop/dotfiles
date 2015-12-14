@@ -20,6 +20,7 @@ export PATH="$PATH:/Users/luis/.rbenv/shims:/Users/luis/google-cloud-sdk/go_appe
 export KIWI_SMTP_USER="hola@usekiwi.com"
 export KIWI_SMTP_PASSWORD="BZKNb8nHR3JrTjRvVmpg"
 export GOPATH="/Users/luis/dev/kiwi/appengine"
+export KIWI_DEV_MOBILE="+525535668392"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -101,7 +102,7 @@ alias web="cd ~/dev/kiwi/web"
 alias mkt="cd ~/dev/kiwi/mkt-py"
 alias admin="cd ~/dev/kiwi/kwadmin"
 alias clients="cd ~/dev/kiwi/clients"
-alias api="cd ~/dev/kiwi/appengine/src/kiwi"
+alias api="cd ~/dev/kiwi/kiwi"
 alias locale="cd ~/dev/clientes/local-e"
 
 # Git aliases
