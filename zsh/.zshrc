@@ -138,4 +138,5 @@ source "/Users/luis/google-cloud-sdk/completion.zsh.inc"
 
 # Load NVM
 export NVM_DIR="/Users/luis/.nvm"
+source $NVM_DIR/nvm.sh
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
