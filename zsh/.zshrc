@@ -54,10 +54,16 @@ alias msqlstop="mysql.server stop"
 alias msqlstatus="mysql.server status"
 alias kiwidb="mysql -uroot kiwi_dev"
 
-##Solr Commands
+## Solr Commands
 alias solrstart="bundle exec sunspot-solr start"
 alias solrrun="bundle exec sunspot-solr run"
 alias solrstop="bundle exec sunspot-solr stop"
+
+# MongoDB Commands
+alias mongostart="mongod --config /usr/local/etc/mongod.conf"
+
+# Redis Commands
+alias redistart="redis-server /usr/local/etc/redis.conf"
 
 ## Rails
 alias be="bundle exec"
