@@ -142,3 +142,5 @@ source "/Users/luis/google-cloud-sdk/path.zsh.inc"
 # The next line enables shell command completion for gcloud.
 source "/Users/luis/google-cloud-sdk/completion.zsh.inc"
 
+export NVM_DIR="/Users/luis/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
