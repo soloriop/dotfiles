@@ -108,6 +108,7 @@ alias mercadoni="cd ~/dev/mercadoni"
 alias mcapi="cd ~/dev/mercadoni/api"
 alias mcweb="cd ~/dev/mercadoni/frontend"
 alias mcadmin="cd ~/dev/mercadoni/frontend-admin"
+alias mcmago="cd ~/dev/mercadoni/frontend-seller"
 alias api="cd ~/dev/kiwi/kiwi"
 alias locale="cd ~/dev/clientes/local-e"
 
