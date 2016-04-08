@@ -65,6 +65,9 @@ alias mongostart="mongod --config /usr/local/etc/mongod.conf"
 # Redis Commands
 alias redistart="redis-server /usr/local/etc/redis.conf"
 
+# Docker
+alias dm="docker-machine"
+
 ## Rails
 alias be="bundle exec"
 alias bi="bundle install"
@@ -110,7 +113,7 @@ alias mcweb="cd ~/dev/mercadoni/frontend"
 alias mcadmin="cd ~/dev/mercadoni/frontend-admin"
 alias mcmago="cd ~/dev/mercadoni/frontend-seller"
 alias api="cd ~/dev/kiwi/kiwi"
-alias locale="cd ~/dev/clientes/local-e"
+alias locale="cd ~/dev/local-e/local-e"
 
 # Git aliases
 alias commit="git commit -am"
