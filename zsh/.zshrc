@@ -151,3 +151,4 @@ source "/Users/luis/google-cloud-sdk/completion.zsh.inc"
 
 export NVM_DIR="/Users/luis/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion # nvm bash complition
