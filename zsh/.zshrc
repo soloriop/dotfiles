@@ -14,12 +14,12 @@ plugins=(rails git ember-cli)
 eval "$(rbenv init -)"
 
 # User configuration
-export PATH="$PATH:/Users/luis/.rbenv/shims:/Users/luis/google-cloud-sdk/go_appengine:/Users/luis/dev/kiwi/appengine/bin:/Users/luis/google-cloud-sdk/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$PATH:/Users/luis/.rbenv/shims:/Users/luis/dev/go:/Users/luis/google-cloud-sdk/go_appengine:/Users/luis/dev/kiwi/appengine/bin:/Users/luis/google-cloud-sdk/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Export ENV variables for Kiwi
 export KIWI_SMTP_USER="hola@usekiwi.com"
 export KIWI_SMTP_PASSWORD="BZKNb8nHR3JrTjRvVmpg"
-export GOPATH="/Users/luis/dev/kiwi/appengine"
+export GOPATH="/Users/luis/dev/go"
 export KIWI_DEV_MOBILE="+525535668392"
 
 source $ZSH/oh-my-zsh.sh
