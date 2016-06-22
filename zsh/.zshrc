@@ -34,12 +34,21 @@ else
   export EDITOR="mvim"
 fi
 
-# Run Main Editor
+# Run MacVim
 e() {
   if ((! $#)); then
     mvim . && echo "mvim ."
   else
     mvim $1 && echo " mvim" $1
+  fi
+}
+
+# Run Atom
+at() {
+  if ((! $#)); then
+    atom . && echo "atom ."
+  else
+    atom $1 && echo " atom" $1
   fi
 }
 
@@ -107,17 +116,16 @@ alias dev="cd ~/dev"
 alias personal="cd ~/dev/personal"
 alias clientes="cd ~/dev/clientes"
 alias kiwi="cd ~/dev/kiwi"
-alias mercadoni="cd ~/dev/mercadoni"
+alias mc="cd ~/dev/mercadoni"
 alias mcapi="cd ~/dev/mercadoni/api"
 alias mcweb="cd ~/dev/mercadoni/frontend"
 alias mcadmin="cd ~/dev/mercadoni/frontend-admin"
 alias mcmago="cd ~/dev/mercadoni/frontend-seller"
-alias api="cd ~/dev/kiwi/kiwi"
 alias locale="cd ~/dev/local-e/local-e"
 
 # Git aliases
 alias commit="git commit -am"
-alias c="echo 'git commit -am' && git commit -am"
+alias c="echo 'git commit -m' && git commit -m"
 alias s="echo 'git stash' && git stash"
 alias a="echo 'git add .' && git add ."
 
