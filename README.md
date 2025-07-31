@@ -1,5 +1,3 @@
-# Luis Mendoza - Dotfiles
-
 These are a collection of personal scripts and configs I have collected over the years, I use them to maintain a standard environment across my machines. Feel free to copy, clone, take inspiration, or do whatever you want with them.
 
 Use at your own risk and make sure you know what you are doing.
@@ -28,7 +26,7 @@ Linux with Hyprland
 
 ```bash
 mkdir ~/dev/config
-git clone https://github.com/luismendozamx/dotfiles.git ~/dev/config/dotfiles
+git clone https://github.com/soloriop/dotfiles.git ~/dev/config/dotfiles
 cd ~/dev/config/dotfiles
 ./install.sh
 ```
@@ -48,7 +46,6 @@ cd ~/dev/config/dotfiles
 ```
 ├── bin/           # Utility scripts
 ├── cursor/        # Cursor editor setup
-├── ghostty/       # Ghostty terminal config
 ├── git/           # Git configuration
 ├── hypr/          # Hyprland window manager (Linux)
 ├── kitty/         # Kitty terminal config
