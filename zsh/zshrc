@@ -12,3 +12,4 @@ fi
 
 # Load aliases
 source "$CONFIG_PATH/zsh/zshrc.alias"
+eval "$(starship init zsh)"

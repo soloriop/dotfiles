@@ -2,23 +2,23 @@
     /* `otf-font-awesome` and SpaceMono Nerd Font are required to be installed for icons */
     font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 15px;
-    transition: background-color .3s ease-out;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+    color: #cba6f7;
+    font-weight: bold;
 }
 
 window#waybar {
-    background: rgba(26, 27, 38, 0.75);
-    color: #c0caf5;
+    background: transparent;
     font-family: 
         SpaceMono Nerd Font,
         feather;
-    transition: background-color .5s;
 }
 
 .modules-left,
 .modules-center,
 .modules-right
 {
-    background: rgba(0, 0, 8, .7);
+    background: transparent;
     margin: 5px 5px;
     padding: 0 5px;
     border-radius: 15px;
@@ -49,7 +49,8 @@ window#waybar {
 #language,
 #mpd {
     padding: 0 5px;
-    border-radius: 15px;
+    border-radius: 0px;
+    background: transparent;
 }
 
 #clock:hover,
@@ -70,7 +71,8 @@ window#waybar {
 #power-profiles-daemon:hover,
 #language:hover,
 #mpd:hover {
-    background: rgba(26, 27, 38, 0.9);
+    background: rgba(203, 166, 247, 0.12);
+    color: #f5c2e7;
 }
 
 
@@ -79,20 +81,22 @@ window#waybar {
   font-family:
     SpaceMono Nerd Font,
     feather;
-  font-weight: 900;
+  font-weight: bold;
   font-size: 13pt;
-  color: #c0caf5;
+  color: #cba6f7;
   border:none;
-  border-radius: 15px;
+  border-radius: 5px;
+  padding: 4px 8px;
 }
 
 #workspaces button.active {
-    background: #313134; 
+    background: rgba(203,166,247,0.3);
+    color: #b4befe;
 }
 
 #workspaces button:hover {
-  background: #11111b;
-  color: #cdd6f4;
+  background: rgba(203,166,247,0.2);
+  color: #f5c2e7;
   box-shadow: none;
 }
 

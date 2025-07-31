@@ -23,11 +23,10 @@
     }
   },
   "pulseaudio": {
-    "format": "{icon}  {volume}%",
+    "format": "{icon}     {volume}%",
     "format-bluetooth": "{icon} {volume}%  {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": " {format_source}",
-    "format-source": " {volume}%",
+    "format-bluetooth-muted": " {icon}",
+    "format-muted": " ",
     "format-source-muted": "",
     "format-icons": {
       "headphone": "",
@@ -41,7 +40,7 @@
     "on-click": "pavucontrol"
   },
   "network": {
-    "format-wifi": "   {essid} ({signalStrength}%)",
+    "format-wifi": "     {essid}   ({signalStrength}%)",
     "format-ethernet": "{ipaddr}/{cidr} ",
     "tooltip-format": "{ifname} via {gwaddr} ",
     "format-linked": "{ifname} (No IP) ",
@@ -63,11 +62,6 @@
     "format-critical": " {temperatureC}",
     "format": " {temperatureC}°C"
   },
-  "hyprland/language": {
-    "format": "  {}",
-    "format-en": "EN",
-    "format-es": "ES"
-  },
   "backlight": {
     "format": "{percent}% {icon}",
     "format-icons": ["", "", "", "", "", "", "", "", ""]
@@ -77,19 +71,16 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "{icon}  {capacity}%",
-    "format-full": "{icon}  {capacity}%",
-    "format-charging": "  {capacity}%",
-    "format-plugged": "  {capacity}%",
-    "format-alt": "{time}  {icon}",
+    "format": "{icon}    {capacity}%",
+    "format-full": "{icon}    {capacity}%",
+    "format-charging": "    {capacity}%",
+    "format-plugged": "    {capacity}%",
+    "format-alt": "{time}    {icon}",
     "format-icons": ["", "", "", "", ""]
   },
-  "battery#bat2": {
-    "bat": "BAT2"
-  },
   "clock": {
-    "format": "{:%H:%M | %e %B} ",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "{:%H:%M|%e %B} ",
+    "tooltip-format":"<big>{:%Y %B} </big>\n<tt><small>{calendar}</small></tt>",
     "format-alt": "{:%Y-%m-%d}"
   }
 }

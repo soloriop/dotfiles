@@ -27,8 +27,22 @@
   },
   "vsicons.dontShowNewVersionMessage": true,
   "window.commandCenter": true,
-  "workbench.colorTheme": "Tokyo Hack",
+  "workbench.colorTheme": "Default High Contrast",
   "workbench.iconTheme": "vscode-icons",
   "workbench.sideBar.location": "right",
-  "extensions.ignoreRecommendations": true
+  "extensions.ignoreRecommendations": true,
+  "redhat.telemetry.enabled": true,
+  "java.completion.favoriteStaticMembers": [
+    "org.junit.Assert.*",
+    "org.junit.Assume.*",
+    "org.junit.jupiter.api.Assertions.*",
+    "org.junit.jupiter.api.Assumptions.*",
+    "org.junit.jupiter.api.DynamicContainer.*",
+    "org.junit.jupiter.api.DynamicTest.*",
+    "org.mockito.Mockito.*",
+    "org.mockito.ArgumentMatchers.*",
+    "org.mockito.Answers.*"
+  ],
+  "workbench.startupEditor": "none",
+  "workbench.secondarySideBar.defaultVisibility": "hidden"
 }
